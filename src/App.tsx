@@ -1,6 +1,6 @@
 import React from 'react';
-import SwaggerUI from 'swagger-ui';
-import 'swagger-ui/dist/swagger-ui.css';
+import SwaggerUI from 'swagger-ui-dist';
+import 'swagger-ui-dist/swagger-ui.css';
 import './App.css';
 import spec from './openapi.json';
 
@@ -24,7 +24,7 @@ class App extends React.Component {
   }
 
   private swagger = (): void => {
-    SwaggerUI({
+    SwaggerUI.SwaggerUIBundle({
       docExpansion: 'list',
       domNode: document.getElementById(this.elementID),
       spec,
