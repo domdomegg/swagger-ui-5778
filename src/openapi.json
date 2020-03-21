@@ -1,6 +1,7 @@
 {
+  "openapi": "3.0.1",
   "info": {
-    "title": "Reproduce 5778 (Swagger 2)",
+    "title": "Reproduce 5778 (OpenAPI 3)",
     "version": "1.0.0"
   },
   "paths": {
@@ -11,35 +12,42 @@
             "name": "somethingPath",
             "in": "path",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           },
           {
             "name": "somethingQuery",
             "in": "query",
             "required": true,
-            "type": "string"
+            "schema": {
+              "type": "string"
+            }
           },
           {
             "name": "something2Query",
             "in": "query",
             "required": true,
-            "type": "boolean"
+            "schema": {
+              "type": "boolean"
+            }
           },
           {
             "name": "somethingQuery3",
             "in": "query",
             "required": true,
-            "enum": [
-              "a",
-              "b"
-            ],
-            "type": "string"
+            "schema": {
+              "type": "string",
+              "enum": ["a", "b"]
+            }
           },
           {
             "name": "somethingQuery4",
             "in": "query",
             "required": true,
-            "type": "file"
+            "schema": {
+              "type": "file"
+            }
           }
         ],
         "responses": {
@@ -49,7 +57,5 @@
         }
       }
     }
-  },
-  "swagger": "2.0",
-  "x-components": {}
+  }
 }

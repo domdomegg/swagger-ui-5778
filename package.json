@@ -8,12 +8,13 @@
     "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^24.0.25",
     "@types/node": "^12.12.24",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "@types/react": "16.9.25",
+    "@types/react-dom": "16.9.5",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
     "react-scripts": "3.3.0",
-    "swagger-ui": "^3.24.3",
+    "swagger-ui": "^3.25.0",
+    "swagger-ui-dist": "3.25.0",
     "typescript": "^3.7.4"
   },
   "scripts": {
